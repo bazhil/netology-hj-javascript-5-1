@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>HJ. Асинхронные HTTP-запросы. Задача 1 — Виджет погоды</title>
+  
+  
+  <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css'>
+<link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css'>
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Poiret+One|Quicksand:700,400|Julius+Sans+One'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+ <div class="spin"></div>
+ <div class="weather-body hidden">
+   <div class="main-info">
+     <h1><i class="wi" id="icon"></i></h1>
+     <h2 class="temp0"></h2>
+   </div> 
+   <div class="secondary-info"> 
+     <h2 class="city"></h2>
+     <h5 class="icon-info">
+       <i class="wi wi-humidity"></i>&nbsp;
+       <span id="humidity">--</span>%
+       <i class="wi wi-strong-wind"></i>
+       <span id="wind">--</span>mph
+     </h5>
+     <h6 class="info">Mostly Cloudy</h6>
+   </div>
+ </div>
+ 
+ <div class="days" id="days">
+
+ </div>
+</div>
+  <script src='https://netology-code.github.io/hj-homeworks/xhr/weather-widget/js/ui.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
